@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #1d1e21 !important;
+}
+
+:root {
+    --main_color: #AAAAAA;
+    --font_size: 17px;
+}
+
+.main_color {
+    color: var(--main_color);
+}
+
+.fs {
+    font-size: var(--font_size);
+}
+
+.nav-item a {
+    color: var(--main_color) !important;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* MAIN START  */
+.main_text {
+    height: 50vh;
+}
+
+.text h1:last-child {
+    text-decoration: underline;
+}
+
+.text h1 {
+    font-size: 5vh !important;
+    word-spacing: 3px;
+}
+
+.main_text i {
+    animation: icon 2s cubic-bezier(1, .99, 0, 0) infinite;
+    margin: -150px 20px 0 0;
+}
+
+@keyframes icon {
+    100% {
+        margin-top: 50px;
+    }
+}
+
+.contain {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.105);
+    padding: 5px 5px 5px 10px;
+    transition: all 0.3s linear;
+}
+
+.row .bg-img {
+    width: 220px !important;
+    height: 150px !important;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.imageone {
+    background-image: url(../images/work-1\ .jpg);
+}
+
+.imagetwo {
+    background-image: url(../images/work-2.jpg);
+}
+
+.imagethree {
+    background-image: url(../images/work-3.jpg);
+}
+
+.imagefour {
+    background-image: url(../images/work-4.jpg);
+}
+
+.row .bg-img::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: all 0.3s linear;
+}
+
+.row .bg-img::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(7, 6, 6, 0.808);
+    border-radius: 50% 50% 50% 0%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: all 0.1s linear;
+}
+
+.row .bg-img:hover::after {
+    content: "\f002";
+    color: white;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: x-small;
+    padding: 8px;
+}
+
+.row .bg-img:hover::before {
+    background-color: #00000069;
+}
+
+.box {
+    width: 250px !important;
+    height: 250px !important;
+    border: 1px solid #343538;
+    font-weight: lighter !important;
+}
+
+.icon_bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service_text p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.portfolio {
+    width: 470px !important;
+}
+
+.portfolio-img {
+    aspect-ratio: 4/5;
+    object-fit: cover;
+}
+
+.team_box {
+    background-color: rgba(0, 0, 0, 0.432);
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.team_box p {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.ceo-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50% 0% 50% 50%;
+    transition: all 0.2s linear;
+    margin-left: 15px;
+}
+
+.ceo-img img:hover {
+    border-radius: 0% 50% 50% 50%;
+    margin-left: 0px;
+}
+
+/* MAIN END  */
+
+/* FOOTER START  */
+.icons {
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: #161719;
+}
+
+.icons_hover {
+    transition: all 0.2s linear;
+
+    &:hover {
+        color: white;
+    }
+}
+
+/* FOOTER END  */
