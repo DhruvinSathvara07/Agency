@@ -164,11 +164,11 @@ body {
     border-radius: 50% 0% 50% 50%;
     transition: all 0.2s linear;
     margin-left: 15px;
-}
 
-.ceo-img img:hover {
-    border-radius: 0% 50% 50% 50%;
-    margin-left: 0px;
+    &:hover {
+        border-radius: 0% 50% 50% 50%;
+        margin-left: 0px;
+    }
 }
 
 /* MAIN END  */
